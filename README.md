@@ -1,4 +1,4 @@
-# lipid-heatmaps
+# Fatty Acid Composition Heatmaps
 
 This is a script to generate fatty acid composition heatmaps from lipidomics data.
 
