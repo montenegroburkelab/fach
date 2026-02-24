@@ -445,6 +445,8 @@ if __name__ == "__main__":
             g_area_df = area_df.loc[
                 (area_df["Lipid_Class"] == c) & (area_df["Sample_Group"] == g)
             ]
+            if g_area_df["Area"].sum() == 0:
+                continue
             # Override the per-sample-group axes ranges for this plot if the -g flag is
             # not set
             if not args.groupaxes:
